@@ -34,8 +34,26 @@ public class SimpleRegression {
 
         double r = this.getCorrelationCoefficient();
 
-        System.out.println(r);
+        double n = this.variables.size();
 
+        System.out.println(n);
+        double xSum = 0;
+        double ySum = 0;
+
+        double xySum = 0;
+
+        for (Variable variable: this.variables) {
+            //System.out.println(variable.getX());
+            xSum += variable.getX();
+            ySum += variable.getY();
+            xySum +=  variable.getX() * variable.getY();
+        }
+
+//        System.out.println(xSum);
+//        System.out.println(ySum);
+       // System.out.println((7*(xySum)) - (xSum * ySum));
+
+        //System.out.println(xySum);
         return 0;
     }
 

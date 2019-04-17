@@ -6,7 +6,7 @@ public class App {
 
         SimpleRegression simpleRegression = new SimpleRegression();
 
-        simpleRegression.read("/Users/vkumar/Documents/Datasets/Linear_Regression/Basic.csv", 0 , 1);
+        simpleRegression.read("Datasets/Linear_Regression/Basic.csv", 0 , 1);
 
         //System.out.println("Prediction where X = 15, Y is: ");
         simpleRegression.predict(15);
